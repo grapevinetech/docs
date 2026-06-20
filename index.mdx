@@ -1,134 +1,68 @@
 ---
-title: Home
-description: Everything you need to set up, configure, and get the most out of Platform, Analytics, and Integrations tools.
-mode: frame
+title: "Introduction"
+description: "What Grapevine is and who it's for."
 ---
 
-<div data-product-guide-index className="flex w-full flex-col gap-8 max-w-5xl mx-auto px-4 md:px-8 lg:px-12 py-10 lg:gap-14 lg:py-16">
-  <div className="flex max-w-[540px] flex-col gap-2 self-center text-center">
-    <h1 className="text-[30px] font-medium leading-9 tracking-tight text-gray-900 dark:text-gray-50">
-      Product Guide
-    </h1>
-    <p className="text-balance text-base leading-relaxed tracking-tight text-gray-600 dark:text-gray-400">
-      Everything you need to set up, configure, and get the most out of Platform, Analytics, and Integrations tools.
-    </p>
-  </div>
+Grapevine is media monitoring built for the AI era. It pulls coverage from news, social, podcasts, broadcast, and AI assistants into one workspace — scored, clustered, and ready to act on.
 
-  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-    <Card
-      title={<span className="product-guide-feature-card-title">Platform overview</span>}
-      icon="chart-no-axes-gantt"
-      href="/platform"
-      className="product-guide-feature-card"
-      size={64}
-    >
-      <span className="product-guide-feature-card-description">Setup, configure, and manage your workspace.</span>
-    </Card>
+<Info>
+  Grapevine is currently in **early access**. Features and limits may evolve as we ship.
+</Info>
 
-    <a
-      href="/analytics"
-      className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
-    >
-      <Icon icon="chart-column" color="rgb(var(--primary))" size={18} className="shrink-0" />
-      <div className="flex flex-col gap-1">
-        <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Analytics</span>
-        <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-          Build, report, and visualize your data.
-        </span>
-      </div>
-    </a>
-    <a
-      href="/integrations"
-      className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
-    >
-      <Icon icon="code-xml" color="rgb(var(--primary))" size={18} className="shrink-0" />
-      <div className="flex flex-col gap-1">
-        <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Integrations</span>
-        <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-          Ready-to-use connectors for common platforms and flexible webhooks.
-        </span>
-      </div>
-    </a>
-  </div>
+## What Grapevine monitors
 
-  <hr className="border-0 border-t border-border" />
+- **Online news & blogs** — articles, op-eds, and trade press across the open web
+- **Social platforms** — conversations on X, Reddit, and other major networks
+- **Print & broadcast** — print coverage and broadcast mentions (plan-dependent)
+- **AI assistants** — how ChatGPT, Perplexity, Gemini, and other models describe your brand
 
-  <div className="flex flex-col gap-4">
-    <h2 className="font-serif text-xl font-medium leading-normal text-gray-900 dark:text-gray-50">Common tasks</h2>
+Unlike alert tools that email you links, Grapevine **reads the coverage**: scoring sentiment, deduplicating syndicated stories, and surfacing the narratives that actually matter.
 
-    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-      <a
-        href="/platform/configuration/user-management"
-        className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
-      >
-        <Icon icon="users" color="rgb(var(--primary))" size={18} className="shrink-0" />
-        <div className="flex flex-col gap-1">
-          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Manage your team</span>
-          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-            Add members, assign roles, and control access across your workspace.
-          </span>
-        </div>
-      </a>
-      <a
-        href="/analytics/connect-data"
-        className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
-      >
-        <Icon icon="database" color="rgb(var(--primary))" size={18} className="shrink-0" />
-        <div className="flex flex-col gap-1">
-          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Connect a data source</span>
-          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-            Link a database, data warehouse, or third-party data provider.
-          </span>
-        </div>
-      </a>
-      <a
-        href="/integrations/connectors/crm"
-        className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
-      >
-        <Icon icon="building-2" color="rgb(var(--primary))" size={18} className="shrink-0" />
-        <div className="flex flex-col gap-1">
-          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Connect your CRM</span>
-          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-            Sync your CRM through native connectors or a custom strategy.
-          </span>
-        </div>
-      </a>
-      <a
-        href="/analytics/dashboards/create-dashboard"
-        className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
-      >
-        <Icon icon="layout-dashboard" color="rgb(var(--primary))" size={18} className="shrink-0" />
-        <div className="flex flex-col gap-1">
-          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Build a dashboard</span>
-          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-            Add charts, set filters, and share a live dashboard.
-          </span>
-        </div>
-      </a>
-      <a
-        href="/integrations/webhooks/configure"
-        className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
-      >
-        <Icon icon="webhook" color="rgb(var(--primary))" size={18} className="shrink-0" />
-        <div className="flex flex-col gap-1">
-          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Set up a webhook</span>
-          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-            Subscribe to events and route them to any endpoint.
-          </span>
-        </div>
-      </a>
-      <a
-        href="/analytics/reports/scheduled-reports"
-        className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
-      >
-        <Icon icon="calendar-clock" color="rgb(var(--primary))" size={18} className="shrink-0" />
-        <div className="flex flex-col gap-1">
-          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Schedule a report</span>
-          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-            Send recurring snapshots via email or Slack.
-          </span>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
+## Who it's for
+
+| Persona | How teams use Grapevine |
+| --- | --- |
+| **Founders & indie brands** | Catch reputation issues early without hiring an agency |
+| **PR & comms teams** | Daily briefings, share of voice, and crisis monitoring |
+| **Agencies** | Multi-client workspaces, white-label reports, and API access |
+| **Enterprise & government** | Custom regions, SSO, and dedicated support |
+
+## Core workflow
+
+<Steps>
+  <Step title="Create a workspace">
+    Sign up at [app.grapevine.tech](https://app.grapevine.tech), name your workspace, and start a free trial.
+  </Step>
+  <Step title="Add topics">
+    Define the brands, people, competitors, and themes you want Grapevine to listen for.
+  </Step>
+  <Step title="Review your inbox">
+    New mentions arrive continuously. Triage them like email — tag, comment, and assign.
+  </Step>
+  <Step title="Act on intelligence">
+    Use the dashboard, insights, analytics, and Agent to understand narratives and respond fast.
+  </Step>
+</Steps>
+
+## Plans at a glance
+
+See [Plans & billing](/account/plans) for full details. Every paid plan includes a **7-day free trial**.
+
+| Plan | Best for | Topics | Highlights |
+| --- | --- | --- | --- |
+| **Starter** | Indie brands | 5 | News, web, social, email alerts |
+| **Plus** | SMB & PR teams | 10 | AI monitoring, risk intelligence, podcast briefings |
+| **Pro** | Agencies | 25 | All channels, API access, white-label reports |
+| **Enterprise** | Large orgs | Custom | SSO, dedicated support, custom regions |
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Quickstart" icon="rocket" href="/getting-started/quickstart">
+    Set up your workspace and first topic in under 10 minutes.
+  </Card>
+
+  <Card title="Key concepts" icon="layers" href="/getting-started/key-concepts">
+    Learn how workspaces, topics, mentions, and channels fit together.
+  </Card>
+</CardGroup>

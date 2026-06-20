@@ -1,0 +1,42 @@
+---
+title: "API keys"
+description: "Programmatic access to your Grapevine workspace."
+---
+
+The Grapevine API lets you pull mentions, analytics, and workspace data into your own tools and workflows.
+
+<Info>
+  API access is available on **Pro** and **Enterprise** plans.
+</Info>
+
+## Creating an API key
+
+1. Go to **API Keys** in the sidebar
+2. Click **Create key**
+3. Name the key (e.g. "BI dashboard", "Slack bot")
+4. Copy the key — it's shown once
+
+<Warning>
+  Store API keys securely. Never commit them to source control or expose them in client-side code.
+</Warning>
+
+## Using your key
+
+Include the key in the `Authorization` header of requests to the Grapevine API:
+
+```bash
+curl https://app.grapevine.tech/api/... \
+  -H "Authorization: Bearer YOUR_API_KEY"
+```
+
+## MCP access
+
+Plus and Pro plans also include **MCP (Model Context Protocol)** access, letting AI tools like Cursor connect directly to your Grapevine data. MCP complements the REST API for agent-driven workflows.
+
+## Revoking keys
+
+Delete unused keys from the API Keys page. Revocation is immediate — any integration using that key will stop working.
+
+## Rate limits
+
+Rate limits depend on your plan. Contact support if you need higher throughput for enterprise integrations.

@@ -1,0 +1,42 @@
+---
+title: "Workflows"
+description: "Automate alerts and actions when conditions are met."
+---
+
+**Workflows** automate repetitive monitoring tasks — alerting the right people when something happens, without manual inbox checking.
+
+## Example workflows
+
+- Email the comms lead when negative sentiment exceeds 60% on a topic
+- Slack notification when a tier-1 outlet mentions your brand
+- Create a tagged mention group when volume spikes 3× above baseline
+- Trigger an audio call for critical risk signals
+
+## Building a workflow
+
+1. Go to **Workflows** in the sidebar
+2. Click **New workflow**
+3. Define a **trigger** — mention volume, sentiment threshold, source match, keyword, etc.
+4. Add **conditions** — topic, channel, tag filters
+5. Choose an **action** — email, notification, tag, assign
+6. Activate
+
+## Workflow alerts
+
+When a workflow fires, affected team members receive an alert. Control workflow email delivery in **Settings → Notifications → Workflow alerts**.
+
+## Best practices
+
+<AccordionGroup>
+  <Accordion title="Start simple">
+    One trigger, one action. Add complexity once you've validated the workflow catches what you expect.
+  </Accordion>
+
+  <Accordion title="Name clearly">
+    "Negative news alert — Brand topic" beats "Workflow 3" when you're debugging at 2am.
+  </Accordion>
+
+  <Accordion title="Test with a narrow scope">
+    Run new workflows on a single topic first before applying workspace-wide.
+  </Accordion>
+</AccordionGroup>
