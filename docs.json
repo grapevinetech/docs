@@ -1,8 +1,8 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "almond",
-  "name": "Product Guide",
-  "description": "Step-by-step guides for every product—platform setup, analytics, and integrations in one place.",
+  "name": "Grapevine",
+  "description": "Documentation for Grapevine — media, social, and AI monitoring for the modern communications team.",
   "colors": {
     "primary": "#166E3F",
     "light": "#26BD6C",
@@ -27,51 +27,61 @@
           "href": "/"
         },
         {
-          "anchor": "Changelog",
-          "icon": "scroll-text",
-          "href": "https://www.mintlify.com/docs/changelog"
-        },
-        {
-          "anchor": "Help",
+          "anchor": "Contact",
           "icon": "life-buoy",
-          "href": "https://www.mintlify.com/docs/contact-support"
+          "href": "https://grapevine.tech/demo"
         }
       ]
     },
     "directory": "card",
     "groups": [
       {
-        "group": "Platform",
-        "icon": "layers",
-        "expanded": true,
+        "group": "Getting started",
+        "icon": "rocket",
         "pages": [
-          "platform/quickstart",
-          "platform/key-concepts",
-          "platform/configuration/settings",
-          "platform/configuration/user-management",
-          "platform/administration/roles-permissions"
+          "index",
+          "getting-started/quickstart",
+          "getting-started/key-concepts"
         ]
       },
       {
-        "group": "Analytics",
-        "icon": "chart-bar",
-        "expanded": true,
+        "group": "Monitoring",
+        "icon": "radar",
         "pages": [
-          "analytics/quickstart",
-          "analytics/connect-data",
-          "analytics/dashboards/create-dashboard",
-          "analytics/reports/scheduled-reports"
+          "monitoring/topics",
+          "monitoring/mentions",
+          "monitoring/sources"
         ]
       },
       {
-        "group": "Integrations",
-        "icon": "plug",
-        "expanded": true,
+        "group": "Intelligence",
+        "icon": "sparkles",
         "pages": [
-          "integrations/quickstart",
-          "integrations/authentication",
-          "integrations/connectors/crm",
-          "integrations/webhooks/configure"
+          "intelligence/dashboard",
+          "intelligence/insights",
+          "intelligence/analytics",
+          "intelligence/ai-monitoring",
+          "intelligence/risk"
+        ]
+      },
+      {
+        "group": "Collaboration",
+        "icon": "users",
+        "pages": [
+          "collaboration/reports",
+          "collaboration/workflows",
+          "collaboration/agent"
+        ]
+      },
+      {
+        "group": "Account",
+        "icon": "settings",
+        "pages": [
+          "account/settings",
+          "account/members",
+          "account/notifications",
+          "account/billing",
+          "account/api-keys"
         ]
       }
     ]
@@ -81,17 +91,43 @@
     "dark": "/logo/dark.svg"
   },
   "navbar": {
-    "links": [],
+    "links": [
+      {
+        "href": "https://grapevine.tech/#pricing",
+        "label": "Pricing"
+      },
+      {
+        "href": "https://grapevine.tech/about",
+        "label": "About"
+      }
+    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Open app",
+      "href": "https://app.grapevine.tech"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/yourcompany",
-      "linkedin": "https://linkedin.com/company/yourcompany"
+      "x": "https://x.com/grapevinetech",
+      "linkedin": "https://linkedin.com/company/grapevine-tech"
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/platform/quickstart",
+      "destination": "/getting-started/quickstart",
+      "permanent": true
+    },
+    {
+      "source": "/platform/key-concepts",
+      "destination": "/getting-started/key-concepts",
+      "permanent": true
+    },
+    {
+      "source": "/analytics/quickstart",
+      "destination": "/intelligence/dashboard",
+      "permanent": true
+    }
+  ]
 }
