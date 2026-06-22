@@ -45,38 +45,48 @@
         ]
       },
       {
-        "group": "Monitoring",
-        "icon": "radar",
-        "pages": [
-          "monitoring/topics",
-          "monitoring/mentions",
-          "monitoring/sources"
-        ]
-      },
-      {
-        "group": "Intelligence",
-        "icon": "sparkles",
+        "group": "For you",
+        "icon": "layout-dashboard",
         "pages": [
           "intelligence/dashboard",
-          "intelligence/insights",
-          "intelligence/analytics",
-          "intelligence/ai-monitoring",
-          "intelligence/risk"
+          "collaboration/agent",
+          "monitoring/inbox",
+          "monitoring/search"
         ]
       },
       {
-        "group": "Collaboration",
-        "icon": "users",
+        "group": "Monitor",
+        "icon": "radar",
         "pages": [
-          "collaboration/reports",
-          "collaboration/workflows",
-          "collaboration/agent"
+          "monitoring/mentions",
+          "monitoring/boards",
+          "monitoring/prompts",
+          "monitoring/sources",
+          "monitoring/entities"
         ]
       },
       {
-        "group": "Account",
+        "group": "Analyze",
+        "icon": "sparkles",
+        "pages": [
+          "intelligence/analytics",
+          "intelligence/insights",
+          "intelligence/risk",
+          "intelligence/ai-monitoring",
+          "collaboration/reports"
+        ]
+      },
+      {
+        "group": "Engage",
+        "icon": "message-square",
+        "pages": ["collaboration/memos"]
+      },
+      {
+        "group": "Configure",
         "icon": "settings",
         "pages": [
+          "monitoring/topics",
+          "collaboration/workflows",
           "account/settings",
           "account/members",
           "account/notifications",
