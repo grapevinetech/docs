@@ -100,7 +100,7 @@
     ]
   },
   "logo": {
-    "light": "/logo/light.svg",
+    "light": "/images/grapevine-svg.svg",
     "dark": "/images/grapevine-svg.svg",
     "href": "https://grapevine.tech"
   },
