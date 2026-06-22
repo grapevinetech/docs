@@ -1,14 +1,17 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
-  "name": "Grapevine",
+  "theme": "sequoia",
+  "name": "Documentation — Grapevine",
   "description": "Documentation for Grapevine — media, social, and AI monitoring for the modern communications team.",
   "colors": {
     "primary": "#166E3F",
     "light": "#26BD6C",
     "dark": "#166E3F"
   },
-  "favicon": "/favicon.ico",
+  "favicon": {
+    "light": "/favicon.ico",
+    "dark": "/images/favicon.svg"
+  },
   "icons": {
     "library": "lucide"
   },
@@ -98,7 +101,8 @@
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/images/grapevine-svg.svg",
+    "href": "https://grapevine.tech"
   },
   "navbar": {
     "links": [
@@ -139,5 +143,9 @@
       "destination": "/intelligence/dashboard",
       "permanent": true
     }
-  ]
+  ],
+  "appearance": {
+    "default": "light",
+    "strict": true
+  }
 }
