@@ -337,21 +337,30 @@ header a.bg-primary:active {
 
 /* ===========================================================================
    Sidebar — match the app's navigation chrome
-   App: group labels are 12px medium, muted (foreground @ ~70%); menu items are
-   14px; the active item is a warm-gray pill with near-black medium text and an
-   inset "well", not coloured link text.
+   App tokens (light): sidebar-foreground oklch(0.15) ≈ #0D0B08 for inactive
+   text + icons (same colour, full opacity); hover/active use sidebar-accent
+   background with sidebar-accent-foreground oklch(0.21) ≈ rgb(26 24 19).
+   Group labels sit at foreground/70.
    =========================================================================== */
+
+:root {
+  --gv-sidebar-foreground: 13 11 8;
+  --gv-sidebar-accent-foreground: 26 24 19;
+  --gv-sidebar-accent: 245 243 239;
+  --gv-sidebar-accent-active: 236 233 228;
+}
 
 /* Group labels (For you / Monitor / Analyze …). */
 #sidebar-content .sidebar-title {
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0;
-  color: rgb(13 11 8 / 0.62);
+  color: rgb(var(--gv-sidebar-foreground) / 0.7);
 }
 
 /* Menu items — full-width rounded buttons so hover/active read as pills. */
-#navigation-items .sidebar-group a {
+#navigation-items .sidebar-group a,
+#sidebar-content a.nav-anchor {
   border-radius: 0.5rem;
   padding-left: 0.625rem;
   transition:
@@ -360,36 +369,52 @@ header a.bg-primary:active {
     box-shadow 0.15s ease;
 }
 
-/* Hover — warm-gray fill with near-black text + icon, never green (app uses
-   sidebar-accent-foreground on hover, not the brand colour). */
-#navigation-items .sidebar-group a:hover {
-  background-color: rgb(245 243 239);
-  color: rgb(13 11 8) !important;
+/* Inactive — near-black text + icon at full opacity (app uses
+   text-sidebar-foreground; icons inherit, not a lighter stone-400). */
+#navigation-items .sidebar-group a:not([aria-current="page"]),
+#sidebar-content a.nav-anchor:not([aria-current="page"]) {
+  color: rgb(var(--gv-sidebar-foreground)) !important;
 }
 
-#navigation-items .sidebar-group a:hover svg {
-  background-color: rgb(13 11 8) !important;
-  color: rgb(13 11 8) !important;
+#navigation-items .sidebar-group a:not([aria-current="page"]) svg,
+#sidebar-content a.nav-anchor:not([aria-current="page"]) svg {
+  background-color: rgb(var(--gv-sidebar-foreground)) !important;
+  color: rgb(var(--gv-sidebar-foreground)) !important;
 }
 
-/* Active page — warm-gray pill, near-black medium text + icon, debossed well.
-   Match the app exactly: medium weight (not bold) and no faux-bold text-shadow,
-   and the icon is foreground, not green. */
+/* Hover — accent fill + accent-foreground text/icon. */
+#navigation-items .sidebar-group a:hover,
+#sidebar-content a.nav-anchor:hover {
+  background-color: rgb(var(--gv-sidebar-accent));
+  color: rgb(var(--gv-sidebar-accent-foreground)) !important;
+}
+
+#navigation-items .sidebar-group a:hover svg,
+#sidebar-content a.nav-anchor:hover svg {
+  background-color: rgb(var(--gv-sidebar-accent-foreground)) !important;
+  color: rgb(var(--gv-sidebar-accent-foreground)) !important;
+}
+
+/* Active page — accent pill, accent-foreground medium text + icon, debossed well. */
 #navigation-items .sidebar-group a[aria-current="page"],
-#navigation-items .sidebar-group a[aria-current="page"] span {
-  color: rgb(13 11 8) !important;
+#navigation-items .sidebar-group a[aria-current="page"] span,
+#sidebar-content a.nav-anchor[aria-current="page"],
+#sidebar-content a.nav-anchor[aria-current="page"] span {
+  color: rgb(var(--gv-sidebar-accent-foreground)) !important;
   font-weight: 500 !important;
   text-shadow: none !important;
 }
 
-#navigation-items .sidebar-group a[aria-current="page"] {
-  background-color: rgb(236 233 228) !important;
+#navigation-items .sidebar-group a[aria-current="page"],
+#sidebar-content a.nav-anchor[aria-current="page"] {
+  background-color: rgb(var(--gv-sidebar-accent-active)) !important;
   box-shadow: var(--gv-shadow-well);
 }
 
-#navigation-items .sidebar-group a[aria-current="page"] svg {
-  background-color: rgb(13 11 8) !important;
-  color: rgb(13 11 8) !important;
+#navigation-items .sidebar-group a[aria-current="page"] svg,
+#sidebar-content a.nav-anchor[aria-current="page"] svg {
+  background-color: rgb(var(--gv-sidebar-accent-foreground)) !important;
+  color: rgb(var(--gv-sidebar-accent-foreground)) !important;
 }
 
 /* Table of contents — active item is near-black (not green), no faux-bold. */
