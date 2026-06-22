@@ -1,0 +1,374 @@
+- generic [active] [ref=e1]:
+  - blockquote [ref=e2]:
+    - heading [level=2] [ref=e3]: Documentation Index
+    - paragraph [ref=e4]:
+      - text: "Fetch the complete documentation index at:"
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /llms.txt
+        - text: /llms.txt
+    - paragraph [ref=e6]: Use this file to discover all available pages before exploring further.
+  - generic [ref=e9]:
+    - banner [ref=e10]:
+      - generic [ref=e14]:
+        - link "Documentation — Grapevine home page light logo" [ref=e16] [cursor=pointer]:
+          - /url: https://grapevine.tech
+          - generic [ref=e17]: Documentation — Grapevine home page
+          - img "light logo" [ref=e18]
+        - button "Open search" [ref=e20] [cursor=pointer]:
+          - img [ref=e21]
+          - generic [ref=e22]: Search...
+          - generic [ref=e23]: ⌘K
+        - generic [ref=e24]:
+          - navigation "Main" [ref=e25]:
+            - list [ref=e26]:
+              - listitem [ref=e27]:
+                - link "Pricing" [ref=e28] [cursor=pointer]:
+                  - /url: https://grapevine.tech/#pricing
+                  - generic [ref=e29]: Pricing
+              - listitem [ref=e30]:
+                - link "About" [ref=e31] [cursor=pointer]:
+                  - /url: https://grapevine.tech/about
+                  - generic [ref=e32]: About
+          - link "Open app" [ref=e33] [cursor=pointer]:
+            - /url: https://app.grapevine.tech
+    - navigation "Pages" [ref=e34]:
+      - generic [ref=e36]:
+        - list [ref=e37]:
+          - listitem [ref=e38]:
+            - link "Home" [ref=e39] [cursor=pointer]:
+              - /url: /
+              - img [ref=e40]
+              - generic [ref=e41]: Home
+          - listitem [ref=e42]:
+            - link "Contact" [ref=e43] [cursor=pointer]:
+              - /url: https://grapevine.tech/demo
+              - img [ref=e44]
+              - generic [ref=e45]: Contact
+        - generic [ref=e46]:
+          - generic [ref=e47]:
+            - img [ref=e48]
+            - heading "Getting started" [level=3] [ref=e49]
+          - list [ref=e50]:
+            - listitem [ref=e51]:
+              - link "Introduction" [ref=e52] [cursor=pointer]:
+                - /url: /
+                - generic [ref=e55]: Introduction
+            - listitem [ref=e56]:
+              - link "Quickstart" [ref=e57] [cursor=pointer]:
+                - /url: /getting-started/quickstart
+                - generic [ref=e60]: Quickstart
+            - listitem [ref=e61]:
+              - link "Key concepts" [ref=e62] [cursor=pointer]:
+                - /url: /getting-started/key-concepts
+                - generic [ref=e65]: Key concepts
+        - generic [ref=e66]:
+          - generic [ref=e67]:
+            - img [ref=e68]
+            - heading "For you" [level=3] [ref=e69]
+          - list [ref=e70]:
+            - listitem [ref=e71]:
+              - link "Dashboard" [ref=e72] [cursor=pointer]:
+                - /url: /intelligence/dashboard
+                - generic [ref=e75]: Dashboard
+            - listitem [ref=e76]:
+              - link "Agent" [ref=e77] [cursor=pointer]:
+                - /url: /collaboration/agent
+                - generic [ref=e80]: Agent
+            - listitem [ref=e81]:
+              - link "Inbox" [ref=e82] [cursor=pointer]:
+                - /url: /monitoring/inbox
+                - generic [ref=e85]: Inbox
+            - listitem [ref=e86]:
+              - link "Search" [ref=e87] [cursor=pointer]:
+                - /url: /monitoring/search
+                - generic [ref=e90]: Search
+        - generic [ref=e91]:
+          - generic [ref=e92]:
+            - img [ref=e93]
+            - heading "Monitor" [level=3] [ref=e94]
+          - list [ref=e95]:
+            - listitem [ref=e96]:
+              - link "Mentions" [ref=e97] [cursor=pointer]:
+                - /url: /monitoring/mentions
+                - generic [ref=e100]: Mentions
+            - listitem [ref=e101]:
+              - link "Boards" [ref=e102] [cursor=pointer]:
+                - /url: /monitoring/boards
+                - generic [ref=e105]: Boards
+            - listitem [ref=e106]:
+              - link "Prompts" [ref=e107] [cursor=pointer]:
+                - /url: /monitoring/prompts
+                - generic [ref=e110]: Prompts
+            - listitem [ref=e111]:
+              - link "Sources" [ref=e112] [cursor=pointer]:
+                - /url: /monitoring/sources
+                - generic [ref=e115]: Sources
+            - listitem [ref=e116]:
+              - link "Entities" [ref=e117] [cursor=pointer]:
+                - /url: /monitoring/entities
+                - generic [ref=e120]: Entities
+        - generic [ref=e121]:
+          - generic [ref=e122]:
+            - img [ref=e123]
+            - heading "Analyze" [level=3] [ref=e124]
+          - list [ref=e125]:
+            - listitem [ref=e126]:
+              - link "Analytics" [ref=e127] [cursor=pointer]:
+                - /url: /intelligence/analytics
+                - generic [ref=e130]: Analytics
+            - listitem [ref=e131]:
+              - link "Insights" [ref=e132] [cursor=pointer]:
+                - /url: /intelligence/insights
+                - generic [ref=e135]: Insights
+            - listitem [ref=e136]:
+              - link "Risk intelligence" [ref=e137] [cursor=pointer]:
+                - /url: /intelligence/risk
+                - generic [ref=e140]: Risk intelligence
+            - listitem [ref=e141]:
+              - link "AI monitoring" [ref=e142] [cursor=pointer]:
+                - /url: /intelligence/ai-monitoring
+                - generic [ref=e145]: AI monitoring
+            - listitem [ref=e146]:
+              - link "Reports" [ref=e147] [cursor=pointer]:
+                - /url: /collaboration/reports
+                - generic [ref=e150]: Reports
+        - generic [ref=e151]:
+          - generic [ref=e152]:
+            - img [ref=e153]
+            - heading "Engage" [level=3] [ref=e154]
+          - list [ref=e155]:
+            - listitem [ref=e156]:
+              - link "Memos" [ref=e157] [cursor=pointer]:
+                - /url: /collaboration/memos
+                - generic [ref=e160]: Memos
+        - generic [ref=e161]:
+          - generic [ref=e162]:
+            - img [ref=e163]
+            - heading "Configure" [level=3] [ref=e164]
+          - list [ref=e165]:
+            - listitem [ref=e166]:
+              - link "Topics" [ref=e167] [cursor=pointer]:
+                - /url: /monitoring/topics
+                - generic [ref=e170]: Topics
+            - listitem [ref=e171]:
+              - link "Workflows" [ref=e172] [cursor=pointer]:
+                - /url: /collaboration/workflows
+                - generic [ref=e175]: Workflows
+            - listitem [ref=e176]:
+              - link "Settings" [ref=e177] [cursor=pointer]:
+                - /url: /account/settings
+                - generic [ref=e180]: Settings
+            - listitem [ref=e181]:
+              - link "Members & invites" [ref=e182] [cursor=pointer]:
+                - /url: /account/members
+                - generic [ref=e185]: Members & invites
+            - listitem [ref=e186]:
+              - link "Notifications" [ref=e187] [cursor=pointer]:
+                - /url: /account/notifications
+                - generic [ref=e190]: Notifications
+            - listitem [ref=e191]:
+              - link "Plans & billing" [ref=e192] [cursor=pointer]:
+                - /url: /account/billing
+                - generic [ref=e195]: Plans & billing
+            - listitem [ref=e196]:
+              - link "API keys" [ref=e197] [cursor=pointer]:
+                - /url: /account/api-keys
+                - generic [ref=e200]: API keys
+    - main [ref=e203]:
+      - generic [ref=e205]:
+        - generic [ref=e206]:
+          - generic [ref=e207]:
+            - link "Getting started" [ref=e210] [cursor=pointer]:
+              - /url: /index
+            - generic [ref=e211]:
+              - heading "Introduction" [level=1] [ref=e212]
+              - generic [ref=e213]:
+                - button "Copy page" [ref=e214] [cursor=pointer]:
+                  - generic [ref=e215]:
+                    - img [ref=e216]
+                    - generic [ref=e219]: Copy page
+                - button "More actions" [ref=e220] [cursor=pointer]:
+                  - img [ref=e221]
+          - paragraph [ref=e224]: What Grapevine is and who it’s for.
+        - generic [ref=e225]:
+          - generic [ref=e226]: Grapevine is media monitoring built for the AI era. It pulls coverage from news, social, podcasts, broadcast, and AI assistants into one workspace — scored, clustered, and ready to act on.
+          - generic [ref=e227]:
+            - img "Info" [ref=e229]
+            - generic [ref=e232]:
+              - text: Grapevine is currently in
+              - strong [ref=e233]: early access
+              - text: . Features and limits may evolve as we ship.
+          - heading "Navigate to header What Grapevine monitors" [level=2] [ref=e234]:
+            - link "Navigate to header" [ref=e235] [cursor=pointer]:
+              - /url: "#what-grapevine-monitors"
+              - img [ref=e237]
+            - generic [ref=e239] [cursor=pointer]: What Grapevine monitors
+          - list [ref=e240]:
+            - listitem [ref=e241]:
+              - strong [ref=e242]: Online news & blogs
+              - text: — articles, op-eds, and trade press across the open web
+            - listitem [ref=e243]:
+              - strong [ref=e244]: Social platforms
+              - text: — conversations on X, Reddit, and other major networks
+            - listitem [ref=e245]:
+              - strong [ref=e246]: Print & broadcast
+              - text: — print coverage and broadcast mentions (plan-dependent)
+            - listitem [ref=e247]:
+              - strong [ref=e248]: AI assistants
+              - text: — how ChatGPT, Perplexity, Gemini, and other models describe your brand
+          - generic [ref=e249]:
+            - text: Unlike alert tools that email you links, Grapevine
+            - strong [ref=e250]: reads the coverage
+            - text: ": scoring sentiment, deduplicating syndicated stories, and surfacing the narratives that actually matter."
+          - img "Grapevine dashboard" [ref=e257]
+          - heading "Navigate to header Who it’s for" [level=2] [ref=e259]:
+            - link "Navigate to header" [ref=e260] [cursor=pointer]:
+              - /url: "#who-it’s-for"
+              - img [ref=e262]
+            - generic [ref=e264] [cursor=pointer]: Who it’s for
+          - table [ref=e267]:
+            - rowgroup [ref=e268]:
+              - row "Persona How teams use Grapevine" [ref=e269]:
+                - columnheader "Persona" [ref=e270]
+                - columnheader "How teams use Grapevine" [ref=e271]
+            - rowgroup [ref=e272]:
+              - row "Founders & indie brands Catch reputation issues early without hiring an agency" [ref=e273]:
+                - cell "Founders & indie brands" [ref=e274]:
+                  - strong [ref=e275]: Founders & indie brands
+                - cell "Catch reputation issues early without hiring an agency" [ref=e276]
+              - row "PR & comms teams Daily briefings, share of voice, and crisis monitoring" [ref=e277]:
+                - cell "PR & comms teams" [ref=e278]:
+                  - strong [ref=e279]: PR & comms teams
+                - cell "Daily briefings, share of voice, and crisis monitoring" [ref=e280]
+              - row "Agencies Multi-client workspaces, white-label reports, and API access" [ref=e281]:
+                - cell "Agencies" [ref=e282]:
+                  - strong [ref=e283]: Agencies
+                - cell "Multi-client workspaces, white-label reports, and API access" [ref=e284]
+              - row "Enterprise & government Custom regions, SSO, and dedicated support" [ref=e285]:
+                - cell "Enterprise & government" [ref=e286]:
+                  - strong [ref=e287]: Enterprise & government
+                - cell "Custom regions, SSO, and dedicated support" [ref=e288]
+          - heading "Navigate to header Core workflow" [level=2] [ref=e289]:
+            - link "Navigate to header" [ref=e290] [cursor=pointer]:
+              - /url: "#core-workflow"
+              - img [ref=e292]
+            - generic [ref=e294] [cursor=pointer]: Core workflow
+          - list [ref=e295]:
+            - listitem [ref=e296]:
+              - generic [ref=e299]:
+                - generic [ref=e300]: "1"
+                - link "Navigate to header" [ref=e302] [cursor=pointer]:
+                  - /url: "#"
+                  - img [ref=e304]
+              - generic [ref=e306]:
+                - paragraph [ref=e307]: Create a workspace
+                - generic [ref=e309]:
+                  - text: Sign up at
+                  - link "app.grapevine.tech" [ref=e310] [cursor=pointer]:
+                    - /url: https://app.grapevine.tech
+                  - text: ", name your workspace, and start a free trial."
+            - listitem [ref=e311]:
+              - generic [ref=e314]:
+                - generic [ref=e315]: "2"
+                - link "Navigate to header" [ref=e317] [cursor=pointer]:
+                  - /url: "#"
+                  - img [ref=e319]
+              - generic [ref=e321]:
+                - paragraph [ref=e322]: Add topics
+                - generic [ref=e324]: Define the brands, people, competitors, and themes you want Grapevine to listen for.
+            - listitem [ref=e325]:
+              - generic [ref=e328]:
+                - generic [ref=e329]: "3"
+                - link "Navigate to header" [ref=e331] [cursor=pointer]:
+                  - /url: "#"
+                  - img [ref=e333]
+              - generic [ref=e335]:
+                - paragraph [ref=e336]: Review your inbox
+                - generic [ref=e338]: New mentions arrive continuously. Triage them like email — tag, comment, and assign.
+            - listitem [ref=e339]:
+              - generic [ref=e342]:
+                - generic [ref=e343]: "4"
+                - link "Navigate to header" [ref=e345] [cursor=pointer]:
+                  - /url: "#"
+                  - img [ref=e347]
+              - generic [ref=e349]:
+                - paragraph [ref=e350]: Act on intelligence
+                - generic [ref=e352]: Use the dashboard, insights, analytics, and Agent to understand narratives and respond fast.
+          - heading "Navigate to header Plans at a glance" [level=2] [ref=e353]:
+            - link "Navigate to header" [ref=e354] [cursor=pointer]:
+              - /url: "#plans-at-a-glance"
+              - img [ref=e356]
+            - generic [ref=e358] [cursor=pointer]: Plans at a glance
+          - generic [ref=e359]:
+            - text: See
+            - link "Plans & billing" [ref=e360] [cursor=pointer]:
+              - /url: /account/plans
+            - text: for full details. Every paid plan includes a
+            - strong [ref=e361]: 7-day free trial
+            - text: .
+          - table [ref=e364]:
+            - rowgroup [ref=e365]:
+              - row "Plan Best for Topics Highlights" [ref=e366]:
+                - columnheader "Plan" [ref=e367]
+                - columnheader "Best for" [ref=e368]
+                - columnheader "Topics" [ref=e369]
+                - columnheader "Highlights" [ref=e370]
+            - rowgroup [ref=e371]:
+              - row "Starter Indie brands 5 News, web, social, email alerts" [ref=e372]:
+                - cell "Starter" [ref=e373]:
+                  - strong [ref=e374]: Starter
+                - cell "Indie brands" [ref=e375]
+                - cell "5" [ref=e376]
+                - cell "News, web, social, email alerts" [ref=e377]
+              - row "Plus SMB & PR teams 10 AI monitoring, risk intelligence, podcast briefings" [ref=e378]:
+                - cell "Plus" [ref=e379]:
+                  - strong [ref=e380]: Plus
+                - cell "SMB & PR teams" [ref=e381]
+                - cell "10" [ref=e382]
+                - cell "AI monitoring, risk intelligence, podcast briefings" [ref=e383]
+              - row "Pro Agencies 25 All channels, API access, white-label reports" [ref=e384]:
+                - cell "Pro" [ref=e385]:
+                  - strong [ref=e386]: Pro
+                - cell "Agencies" [ref=e387]
+                - cell "25" [ref=e388]
+                - cell "All channels, API access, white-label reports" [ref=e389]
+              - row "Enterprise Large orgs Custom SSO, dedicated support, custom regions" [ref=e390]:
+                - cell "Enterprise" [ref=e391]:
+                  - strong [ref=e392]: Enterprise
+                - cell "Large orgs" [ref=e393]
+                - cell "Custom" [ref=e394]
+                - cell "SSO, dedicated support, custom regions" [ref=e395]
+          - heading "Navigate to header Next steps" [level=2] [ref=e396]:
+            - link "Navigate to header" [ref=e397] [cursor=pointer]:
+              - /url: "#next-steps"
+              - img [ref=e399]
+            - generic [ref=e401] [cursor=pointer]: Next steps
+          - generic [ref=e402]:
+            - link "Quickstart Set up your workspace and first topic in under 10 minutes." [ref=e403] [cursor=pointer]:
+              - generic [ref=e404]:
+                - img [ref=e406]
+                - generic [ref=e407]:
+                  - heading "Quickstart" [level=2] [ref=e408]
+                  - generic [ref=e410]: Set up your workspace and first topic in under 10 minutes.
+            - link "Key concepts Learn how workspaces, topics, mentions, and channels fit together." [ref=e411] [cursor=pointer]:
+              - generic [ref=e412]:
+                - img [ref=e414]
+                - generic [ref=e415]:
+                  - heading "Key concepts" [level=2] [ref=e416]
+                  - generic [ref=e418]: Learn how workspaces, topics, mentions, and channels fit together.
+        - link "Quickstart Next" [ref=e421] [cursor=pointer]:
+          - /url: /getting-started/quickstart
+          - generic [ref=e422]:
+            - generic [ref=e423]: Quickstart
+            - generic [ref=e424]:
+              - img [ref=e425]
+              - generic [ref=e427]: Next
+        - generic [ref=e429]:
+          - link "x" [ref=e430] [cursor=pointer]:
+            - /url: https://x.com/grapevine
+            - generic [ref=e431]: x
+            - img [ref=e432]
+          - link "linkedin" [ref=e433] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/grapevine-tech
+            - generic [ref=e434]: linkedin
+            - img [ref=e435]

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&display=swap");
+
 :root {
   --default-border-color: var(--gray-200);
 }
@@ -144,6 +146,255 @@ body:has([data-product-guide-index]) #sidebar a.nav-anchor[href='/'] svg {
 }
 
 img.nav-logo {
-  max-width: 220px;
-  height: auto;
+  height: 1.5rem;
+  width: auto;
+  max-width: 150px;
+}
+
+/* Drop the "Powered by Mintlify" footer badge so the footer reads as Grapevine. */
+a[href*="mintlify.com/preview-request"],
+a[href*="mintlify.com?utm"],
+a[href^="https://mintlify.com"],
+a[href^="https://www.mintlify.com"],
+.footer-powered-by,
+[class*="powered-by"] {
+  display: none !important;
+}
+
+/* ===========================================================================
+   Marketing-aligned skeuomorphism
+   Ports the tactile layer from the marketing site's global.css — raised,
+   glossy buttons (btn-raised), soft layered elevation (--shadow-card /
+   --shadow-sheet), recessed "well" inputs (--shadow-well), and a faint
+   film-grain. Keeps the docs chrome feeling like the same product.
+   =========================================================================== */
+:root {
+  --gv-shadow-card: 0 1px 2px rgb(28 25 23 / 0.04), 0 4px 12px -2px rgb(28 25 23 / 0.06);
+  --gv-shadow-well: inset 0 1px 2px rgb(28 25 23 / 0.06), inset 0 2px 6px -2px rgb(28 25 23 / 0.04);
+  --gv-shadow-sheet:
+    0 1px 2px rgb(28 25 23 / 0.05), 0 2px 6px -2px rgb(28 25 23 / 0.05),
+    0 12px 32px -12px rgb(28 25 23 / 0.14);
+}
+
+/* Primary CTA ("Open app") — standard near-black skeuomorphic button, matching
+   the app/marketing primary (`--primary` oklch(0.21 0.01 85)). Green is reserved
+   for accents, not solid buttons. */
+#navbar a.bg-primary,
+header a.bg-primary {
+  background-color: rgb(26 24 19) !important;
+  color: #fff !important;
+  background-image: linear-gradient(
+    to bottom,
+    color-mix(in oklab, white 26%, transparent),
+    color-mix(in oklab, white 6%, transparent) 40%,
+    transparent 60%,
+    color-mix(in oklab, black 22%, transparent)
+  ) !important;
+  box-shadow:
+    inset 0 1px 0 0 color-mix(in oklab, white 40%, transparent),
+    inset 0 -2px 3px 0 color-mix(in oklab, black 28%, transparent),
+    0 1px 2px 0 rgb(0 0 0 / 0.3) !important;
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.1s ease,
+    filter 0.18s ease !important;
+}
+
+#navbar a.bg-primary:hover,
+header a.bg-primary:hover {
+  opacity: 1 !important;
+  filter: brightness(1.06);
+}
+
+#navbar a.bg-primary:active,
+header a.bg-primary:active {
+  transform: translateY(1px);
+  box-shadow:
+    inset 0 1px 0 0 color-mix(in oklab, white 22%, transparent),
+    inset 0 2px 4px 0 color-mix(in oklab, black 30%, transparent),
+    0 1px 1px 0 rgb(0 0 0 / 0.2) !important;
+}
+
+/* Search entry — recessed input well. */
+#search-bar-entry {
+  box-shadow: var(--gv-shadow-well) !important;
+}
+
+/* Card titles use the brand serif (Instrument Serif), like the app's display
+   headings — not a bold sans. */
+.card :is(h2, h3, [data-component-part="card-title"]) {
+  font-family: "Instrument Serif", ui-serif, Georgia, serif !important;
+  font-weight: 400 !important;
+  font-size: 1.3rem !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.02em;
+}
+
+/* Cards — soft layered elevation that lifts on hover (matches marketing
+   shadow-card → shadow-sheet). Warm paper surface to match --card. */
+.card {
+  background-color: rgb(255 253 250) !important;
+  box-shadow: var(--gv-shadow-card) !important;
+  transition:
+    transform 0.18s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.18s ease,
+    border-color 0.18s ease !important;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--gv-shadow-sheet) !important;
+}
+
+/* Callouts and code blocks — gentle card elevation. */
+.callout,
+.mdx-content pre {
+  box-shadow: var(--gv-shadow-card) !important;
+}
+
+/* Frames — drop Mintlify's default graph-paper grid backdrop behind images.
+   The app/marketing never show a grid behind media; keep the clean warm
+   surface (bg-gray-50/50) instead. */
+.frame [class*="bg-grid"] {
+  display: none !important;
+}
+
+/* Step number circles — Mintlify fills them with gray-50, which is almost
+   identical to our warm page background, so the chip vanishes. Give it a
+   warmer fill, a hairline ring, and a soft raised shadow so it reads as a
+   distinct tactile token (matches the app's numbered chips). */
+.step-container .rounded-full {
+  background-color: rgb(245 243 239) !important;
+  border: 1px solid rgb(0 0 0 / 0.08) !important;
+  box-shadow:
+    inset 0 1px 0 0 rgb(255 255 255 / 0.7),
+    0 1px 1.5px 0 rgb(0 0 0 / 0.07) !important;
+  color: rgb(28 25 23) !important;
+}
+
+/* Faint paper-grain on the sidebar gutter only — exactly like the app, where
+   the grain covers the shell behind the floating main panel and the content
+   panel stays clean. Multiply at very low opacity; never intercepts clicks. */
+#sidebar-content::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.04;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E");
+  background-size: 240px 240px;
+}
+
+#sidebar-content > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===========================================================================
+   Warm "stone" palette — tight match to the app/marketing tokens
+   The app's light theme sits a hair warm of white (oklch hue ~85, trace
+   chroma) so it reads as paper, not a backlit screen. Mintlify ships a cool,
+   slightly-green neutral gray scale. Remap its `--gray-*` ramp onto warm stone
+   (which lines up almost exactly with the app's tokens: foreground #0D0B08 ≈
+   stone-950, muted #75716A ≈ stone-500, border #E6E3DE ≈ stone-200). Every
+   text / border / surface that derives from the ramp warms up to match.
+   =========================================================================== */
+:root {
+  --gray-50: 250 250 249 !important;
+  --gray-100: 245 245 244 !important;
+  --gray-200: 231 229 228 !important;
+  --gray-300: 214 211 209 !important;
+  --gray-400: 168 162 158 !important;
+  --gray-500: 120 113 108 !important;
+  --gray-600: 87 83 78 !important;
+  --gray-700: 68 64 60 !important;
+  --gray-800: 41 37 36 !important;
+  --gray-900: 28 25 23 !important;
+  --gray-950: 12 10 9 !important;
+}
+
+/* Headings to warm near-black (some ship a cool slate via the prose vars). */
+.mdx-content :is(h1, h2, h3, h4) {
+  color: rgb(28 25 23);
+}
+
+/* Code uses the brand mono (Geist Mono), like the app. */
+.mdx-content code,
+.mdx-content pre,
+.mdx-content kbd {
+  font-family: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Inline links carry the brand green — the app reserves green for accents like
+   this. Mintlify already draws the underline (a green border-bottom), so we set
+   only the text colour to avoid a doubled-up underline. */
+.mdx-content :is(p, li, td, blockquote) a {
+  color: rgb(37 124 58);
+  text-decoration: none;
+}
+
+/* ===========================================================================
+   Sidebar — match the app's navigation chrome
+   App: group labels are 12px medium, muted (foreground @ ~70%); menu items are
+   14px; the active item is a warm-gray pill with near-black medium text and an
+   inset "well", not coloured link text.
+   =========================================================================== */
+
+/* Group labels (For you / Monitor / Analyze …). */
+#sidebar-content .sidebar-title {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: rgb(13 11 8 / 0.62);
+}
+
+/* Menu items — full-width rounded buttons so hover/active read as pills. */
+#navigation-items .sidebar-group a {
+  border-radius: 0.5rem;
+  padding-left: 0.625rem;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+/* Hover — warm-gray fill with near-black text + icon, never green (app uses
+   sidebar-accent-foreground on hover, not the brand colour). */
+#navigation-items .sidebar-group a:hover {
+  background-color: rgb(245 243 239);
+  color: rgb(13 11 8) !important;
+}
+
+#navigation-items .sidebar-group a:hover svg {
+  background-color: rgb(13 11 8) !important;
+  color: rgb(13 11 8) !important;
+}
+
+/* Active page — warm-gray pill, near-black medium text + icon, debossed well.
+   Match the app exactly: medium weight (not bold) and no faux-bold text-shadow,
+   and the icon is foreground, not green. */
+#navigation-items .sidebar-group a[aria-current="page"],
+#navigation-items .sidebar-group a[aria-current="page"] span {
+  color: rgb(13 11 8) !important;
+  font-weight: 500 !important;
+  text-shadow: none !important;
+}
+
+#navigation-items .sidebar-group a[aria-current="page"] {
+  background-color: rgb(236 233 228) !important;
+  box-shadow: var(--gv-shadow-well);
+}
+
+#navigation-items .sidebar-group a[aria-current="page"] svg {
+  background-color: rgb(13 11 8) !important;
+  color: rgb(13 11 8) !important;
+}
+
+/* Table of contents — active item is near-black (not green), no faux-bold. */
+a[aria-current="location"] {
+  color: rgb(13 11 8) !important;
+  font-weight: 500 !important;
+  text-shadow: none !important;
 }
