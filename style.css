@@ -240,10 +240,12 @@ header a.bg-primary:hover::after {
   display: none !important;
 }
 
-/* Restore the bottom breathing room the footer's pb-28 used to provide, so the
-   Previous/Next cards clear the sticky "Ask a question" input. */
-#content-area {
-  padding-bottom: 7rem;
+/* Separate the sticky "Ask a question" input from the Previous/Next cards above
+   it (the hidden footer used to provide this gap). The space has to sit ABOVE
+   the sticky card, so use a top margin on the card rather than padding on the
+   container (which would land below it). */
+#content-area > div[class~="sticky"][class~="bottom-0"] {
+  margin-top: 3rem;
 }
 
 /* Search entry — recessed input well. */
