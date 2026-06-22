@@ -3,11 +3,23 @@ title: "Search"
 description: "One-off research across your coverage history."
 ---
 
-**Search** is Grapevine's ad-hoc research mode — query your indexed coverage without creating a permanent topic monitor.
+**Search** is Grapevine's ad-hoc research mode — run a one-off capture across every channel without creating a permanent topic monitor.
 
-<Frame caption="Run one-off searches across your coverage">
-  <img src="https://static.grapevine.tech/docs/screenshots/app-search.png?v=10" alt="Grapevine search" />
+<Frame caption="The search builder — keywords, themes, and date range">
+  <img src="https://static.grapevine.tech/docs/screenshots/app-search.png?v=12" alt="Grapevine search" />
 </Frame>
+
+## Using the search builder
+
+Go to **Search** in the sidebar. The **"What do you want to look for?"** card is the same query builder used for topics, tuned for a single capture:
+
+1. **Keywords** — comma-separated terms (`senate, shutdown, @capitolstrategy`). A mention matches if it contains any term in the group. Use **+ Add AND group** when you need multiple required keyword sets.
+2. **Themes** — optional plain-language subjects (`politics, federal budget`). Grapevine expands these across news themes and channels automatically. You can match on themes alone, keywords alone, or both.
+3. **Date range** — how far back to pull for this search. Wider windows scan more sources and take longer.
+4. **Advanced** — refine sources, language, region, sentiment/summary guidance, and custom scoring questions.
+5. Click **Search**. Grapevine fetches and enriches results once, then keeps them under **Recent searches**.
+
+Open any recent search to browse mentions, sentiment, and collaboration tools — the same detail view as Mentions. Promote a search to a **topic** when you want ongoing monitoring and alerts.
 
 ## Search vs topics
 
@@ -16,7 +28,7 @@ description: "One-off research across your coverage history."
 | Purpose | Ongoing monitoring | One-off investigation |
 | Alerts | Yes | No |
 | Dashboard | Yes | No |
-| History | Retained per plan | Session-based |
+| History | Retained per plan | Kept after capture; promote to a topic for ongoing monitoring |
 
 Use **topics** for always-on listening. Use **search** when you need to dig into something quickly — a breaking story, a competitor mention, or a historical pattern.
 

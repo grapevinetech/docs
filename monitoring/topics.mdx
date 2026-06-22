@@ -3,22 +3,28 @@ title: "Topics"
 description: "Set up and manage the subjects Grapevine monitors."
 ---
 
-Topics are the foundation of Grapevine. Each topic continuously listens for keywords across your plan's channels.
+Topics are the foundation of Grapevine. Each topic continuously listens for keywords and themes across your plan's channels.
 
-<Frame caption="Manage everything Grapevine is listening for">
+<Frame caption="The topic builder and your active monitors">
   <img src="https://static.grapevine.tech/docs/screenshots/app-topics.png?v=11" alt="Grapevine topics" />
 </Frame>
 
-## Creating a topic
+## Using the topic builder
 
-1. Go to **Topics** in the sidebar
-2. Click **Add topic**
-3. Fill in:
-   - **Name** — a clear label ("Competitor: Globex", "CEO: Jane Smith")
-   - **Keywords** — comma-separated terms to match
-   - **Color** — for charts and badges
+Go to **Topics** in the sidebar. Under **"What do you want to monitor?"**:
 
-Grapevine starts collecting mentions as soon as the topic is saved.
+1. **Name** *(optional)* — a label for dashboards and filters (`Federal budget deal`). If left blank, Grapevine derives a name from your keywords or themes.
+2. **Keywords** — comma-separated terms (`senate, shutdown, @capitolstrategy`). A mention matches if it contains any term in the group. Use **+ Add AND group** to require additional keyword sets (e.g. `senate` AND `appropriations`).
+3. **Themes** — optional plain-language subjects (`politics, federal budget`). Grapevine maps these to news themes and expands them across channels. At least one keyword or theme is required.
+4. **Advanced** — open to set:
+   - **Excludes** — terms to filter out
+   - **Sources** — limit to specific outlets or channels
+   - **History** — how far back to pull when the topic starts (then it updates continuously)
+   - **Language** and **Region**
+   - Sentiment/summary guidance and custom scoring questions
+5. Click **Create topic**. Grapevine begins collecting immediately; open the topic card to see mentions, analytics, and settings.
+
+Your active topics appear below in **Your topics** — each card shows keyword badges, mention count, and an **Open** link.
 
 ## Keyword strategy
 
@@ -37,7 +43,7 @@ Grapevine starts collecting mentions as soon as the topic is saved.
 </AccordionGroup>
 
 <Tip>
-  Review keyword performance after a week. If you're drowning in noise, remove broad terms. If you're missing coverage, add alternate spellings and nicknames.
+  Review keyword performance after a week. If you're drowning in noise, remove broad terms. If you're missing coverage, add alternate spellings and nicknames — or add a **theme** to catch related coverage the keywords miss.
 </Tip>
 
 ## Topic limits by plan
@@ -51,11 +57,7 @@ Grapevine starts collecting mentions as soon as the topic is saved.
 
 ## Topic settings
 
-Open a topic and click **Edit settings** to adjust:
-
-- Keywords and display name
-- Default filters
-- Alert configuration
+Open a topic and use the **⋯** menu → **Edit settings** to adjust keywords, themes, sources, history, and alerts.
 
 ## Deleting a topic
 
