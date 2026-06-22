@@ -1,0 +1,225 @@
+- generic [active] [ref=e1]:
+  - blockquote [ref=e2]:
+    - heading [level=2] [ref=e3]: Documentation Index
+    - paragraph [ref=e4]:
+      - text: "Fetch the complete documentation index at:"
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /llms.txt
+        - text: /llms.txt
+    - paragraph [ref=e6]: Use this file to discover all available pages before exploring further.
+  - generic [ref=e9]:
+    - banner [ref=e10]:
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - link "Documentation — Grapevine home page light logo" [ref=e15] [cursor=pointer]:
+            - /url: https://grapevine.tech
+            - generic [ref=e16]: Documentation — Grapevine home page
+            - img "light logo" [ref=e17]
+          - generic [ref=e18]:
+            - button "Open search" [ref=e19] [cursor=pointer]:
+              - generic [ref=e20]: Search...
+              - img [ref=e21]
+            - button "More actions" [ref=e22] [cursor=pointer]:
+              - img [ref=e23]
+        - button "Navigation Getting started Introduction" [ref=e25] [cursor=pointer]:
+          - generic [ref=e26]:
+            - generic [ref=e27]: Navigation
+            - img [ref=e28]
+          - generic [ref=e30]:
+            - generic [ref=e31]:
+              - generic [ref=e32]: Getting started
+              - img [ref=e33]
+            - generic [ref=e35]: Introduction
+    - main [ref=e38]:
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - generic [ref=e42]:
+            - link "Getting started" [ref=e45] [cursor=pointer]:
+              - /url: /index
+            - heading "Introduction" [level=1] [ref=e47]
+          - paragraph [ref=e49]: What Grapevine is and who it’s for.
+          - generic [ref=e50]:
+            - button "Copy page" [ref=e51] [cursor=pointer]:
+              - generic [ref=e52]:
+                - img [ref=e53]
+                - generic [ref=e56]: Copy page
+            - button "More actions" [ref=e57] [cursor=pointer]:
+              - img [ref=e58]
+        - generic [ref=e60]:
+          - generic [ref=e61]: Grapevine is media monitoring built for the AI era. It pulls coverage from news, social, podcasts, broadcast, and AI assistants into one workspace — scored, clustered, and ready to act on.
+          - generic [ref=e62]:
+            - img "Info" [ref=e64]
+            - generic [ref=e67]:
+              - text: Grapevine is currently in
+              - strong [ref=e68]: early access
+              - text: . Features and limits may evolve as we ship.
+          - heading "Navigate to header What Grapevine monitors" [level=2] [ref=e69]:
+            - link "Navigate to header" [ref=e70] [cursor=pointer]:
+              - /url: "#what-grapevine-monitors"
+              - img [ref=e72]
+            - generic [ref=e74] [cursor=pointer]: What Grapevine monitors
+          - list [ref=e75]:
+            - listitem [ref=e76]:
+              - strong [ref=e77]: Online news & blogs
+              - text: — articles, op-eds, and trade press across the open web
+            - listitem [ref=e78]:
+              - strong [ref=e79]: Social platforms
+              - text: — conversations on X, Reddit, and other major networks
+            - listitem [ref=e80]:
+              - strong [ref=e81]: Print & broadcast
+              - text: — print coverage and broadcast mentions (plan-dependent)
+            - listitem [ref=e82]:
+              - strong [ref=e83]: AI assistants
+              - text: — how ChatGPT, Perplexity, Gemini, and other models describe your brand
+          - generic [ref=e84]:
+            - text: Unlike alert tools that email you links, Grapevine
+            - strong [ref=e85]: reads the coverage
+            - text: ": scoring sentiment, deduplicating syndicated stories, and surfacing the narratives that actually matter."
+          - img "Grapevine dashboard" [ref=e91]
+          - heading "Navigate to header Who it’s for" [level=2] [ref=e93]:
+            - link "Navigate to header" [ref=e94] [cursor=pointer]:
+              - /url: "#who-it’s-for"
+              - img [ref=e96]
+            - generic [ref=e98] [cursor=pointer]: Who it’s for
+          - table [ref=e101]:
+            - rowgroup [ref=e102]:
+              - row "Persona How teams use Grapevine" [ref=e103]:
+                - columnheader "Persona" [ref=e104]
+                - columnheader "How teams use Grapevine" [ref=e105]
+            - rowgroup [ref=e106]:
+              - row "Founders & indie brands Catch reputation issues early without hiring an agency" [ref=e107]:
+                - cell "Founders & indie brands" [ref=e108]:
+                  - strong [ref=e109]: Founders & indie brands
+                - cell "Catch reputation issues early without hiring an agency" [ref=e110]
+              - row "PR & comms teams Daily briefings, share of voice, and crisis monitoring" [ref=e111]:
+                - cell "PR & comms teams" [ref=e112]:
+                  - strong [ref=e113]: PR & comms teams
+                - cell "Daily briefings, share of voice, and crisis monitoring" [ref=e114]
+              - row "Agencies Multi-client workspaces, white-label reports, and API access" [ref=e115]:
+                - cell "Agencies" [ref=e116]:
+                  - strong [ref=e117]: Agencies
+                - cell "Multi-client workspaces, white-label reports, and API access" [ref=e118]
+              - row "Enterprise & government Custom regions, SSO, and dedicated support" [ref=e119]:
+                - cell "Enterprise & government" [ref=e120]:
+                  - strong [ref=e121]: Enterprise & government
+                - cell "Custom regions, SSO, and dedicated support" [ref=e122]
+          - heading "Navigate to header Core workflow" [level=2] [ref=e123]:
+            - link "Navigate to header" [ref=e124] [cursor=pointer]:
+              - /url: "#core-workflow"
+              - img [ref=e126]
+            - generic [ref=e128] [cursor=pointer]: Core workflow
+          - list [ref=e129]:
+            - listitem [ref=e130]:
+              - generic [ref=e133]:
+                - generic [ref=e134]: "1"
+                - link "Navigate to header" [ref=e136] [cursor=pointer]:
+                  - /url: "#"
+                  - img [ref=e138]
+              - generic [ref=e140]:
+                - paragraph [ref=e141]: Create a workspace
+                - generic [ref=e143]:
+                  - text: Sign up at
+                  - link "app.grapevine.tech" [ref=e144] [cursor=pointer]:
+                    - /url: https://app.grapevine.tech
+                  - text: ", name your workspace, and start a free trial."
+            - listitem [ref=e145]:
+              - generic [ref=e148]:
+                - generic [ref=e149]: "2"
+                - link "Navigate to header" [ref=e151] [cursor=pointer]:
+                  - /url: "#"
+                  - img [ref=e153]
+              - generic [ref=e155]:
+                - paragraph [ref=e156]: Add topics
+                - generic [ref=e158]: Define the brands, people, competitors, and themes you want Grapevine to listen for.
+            - listitem [ref=e159]:
+              - generic [ref=e162]:
+                - generic [ref=e163]: "3"
+                - link "Navigate to header" [ref=e165] [cursor=pointer]:
+                  - /url: "#"
+                  - img [ref=e167]
+              - generic [ref=e169]:
+                - paragraph [ref=e170]: Review your inbox
+                - generic [ref=e172]: New mentions arrive continuously. Triage them like email — tag, comment, and assign.
+            - listitem [ref=e173]:
+              - generic [ref=e176]:
+                - generic [ref=e177]: "4"
+                - link "Navigate to header" [ref=e179] [cursor=pointer]:
+                  - /url: "#"
+                  - img [ref=e181]
+              - generic [ref=e183]:
+                - paragraph [ref=e184]: Act on intelligence
+                - generic [ref=e186]: Use the dashboard, insights, analytics, and Agent to understand narratives and respond fast.
+          - heading "Navigate to header Plans at a glance" [level=2] [ref=e187]:
+            - link "Navigate to header" [ref=e188] [cursor=pointer]:
+              - /url: "#plans-at-a-glance"
+              - img [ref=e190]
+            - generic [ref=e192] [cursor=pointer]: Plans at a glance
+          - generic [ref=e193]:
+            - text: See
+            - link "Plans & billing" [ref=e194] [cursor=pointer]:
+              - /url: /account/plans
+            - text: for full details. Every paid plan includes a
+            - strong [ref=e195]: 7-day free trial
+            - text: .
+          - table [ref=e198]:
+            - rowgroup [ref=e199]:
+              - row "Plan Best for Topics Highlights" [ref=e200]:
+                - columnheader "Plan" [ref=e201]
+                - columnheader "Best for" [ref=e202]
+                - columnheader "Topics" [ref=e203]
+                - columnheader "Highlights" [ref=e204]
+            - rowgroup [ref=e205]:
+              - row "Starter Indie brands 5 News, web, social, email alerts" [ref=e206]:
+                - cell "Starter" [ref=e207]:
+                  - strong [ref=e208]: Starter
+                - cell "Indie brands" [ref=e209]
+                - cell "5" [ref=e210]
+                - cell "News, web, social, email alerts" [ref=e211]
+              - row "Plus SMB & PR teams 10 AI monitoring, risk intelligence, podcast briefings" [ref=e212]:
+                - cell "Plus" [ref=e213]:
+                  - strong [ref=e214]: Plus
+                - cell "SMB & PR teams" [ref=e215]
+                - cell "10" [ref=e216]
+                - cell "AI monitoring, risk intelligence, podcast briefings" [ref=e217]
+              - row "Pro Agencies 25 All channels, API access, white-label reports" [ref=e218]:
+                - cell "Pro" [ref=e219]:
+                  - strong [ref=e220]: Pro
+                - cell "Agencies" [ref=e221]
+                - cell "25" [ref=e222]
+                - cell "All channels, API access, white-label reports" [ref=e223]
+              - row "Enterprise Large orgs Custom SSO, dedicated support, custom regions" [ref=e224]:
+                - cell "Enterprise" [ref=e225]:
+                  - strong [ref=e226]: Enterprise
+                - cell "Large orgs" [ref=e227]
+                - cell "Custom" [ref=e228]
+                - cell "SSO, dedicated support, custom regions" [ref=e229]
+          - heading "Navigate to header Next steps" [level=2] [ref=e230]:
+            - link "Navigate to header" [ref=e231] [cursor=pointer]:
+              - /url: "#next-steps"
+              - img [ref=e233]
+            - generic [ref=e235] [cursor=pointer]: Next steps
+          - generic [ref=e236]:
+            - link "Quickstart Set up your workspace and first topic in under 10 minutes." [ref=e237] [cursor=pointer]:
+              - generic [ref=e239]:
+                - heading "Quickstart" [level=2] [ref=e240]
+                - generic [ref=e242]: Set up your workspace and first topic in under 10 minutes.
+            - link "Key concepts Learn how workspaces, topics, mentions, and channels fit together." [ref=e243] [cursor=pointer]:
+              - generic [ref=e245]:
+                - heading "Key concepts" [level=2] [ref=e246]
+                - generic [ref=e248]: Learn how workspaces, topics, mentions, and channels fit together.
+        - link "Quickstart Next" [ref=e250] [cursor=pointer]:
+          - /url: /getting-started/quickstart
+          - generic [ref=e251]:
+            - generic [ref=e252]: Quickstart
+            - generic [ref=e253]:
+              - img [ref=e254]
+              - generic [ref=e256]: Next
+        - generic [ref=e258]:
+          - link "x" [ref=e259] [cursor=pointer]:
+            - /url: https://x.com/grapevineintel
+            - generic [ref=e260]: x
+            - img [ref=e261]
+          - link "linkedin" [ref=e262] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/grapevineintelligence
+            - generic [ref=e263]: linkedin
+            - img [ref=e264]

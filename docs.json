@@ -133,12 +133,6 @@
       "href": "https://app.grapevine.tech"
     }
   },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/grapevineintel",
-      "linkedin": "https://www.linkedin.com/company/grapevineintelligence/"
-    }
-  },
   "redirects": [
     {
       "source": "/platform/quickstart",
