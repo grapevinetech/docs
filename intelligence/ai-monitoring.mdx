@@ -5,59 +5,31 @@ description: "Track how AI assistants describe your brand over time."
 
 People increasingly ask AI before they search, shop, or decide. **AI monitoring** tracks what leading models say about your brand — and how those answers change.
 
-<Frame caption="Track prompts across AI models">
-  <img src="https://static.grapevine.tech/docs/screenshots/app-prompts.png?v=3" alt="Grapevine AI prompts" />
-</Frame>
-
 <Info>
-  AI monitoring is available on **Plus** and **Pro** plans.
+  This guide covers the strategy behind AI monitoring. For the Prompts UI, see **[Prompts](/monitoring/prompts)**.
 </Info>
 
-## How it works
+## Why AI monitoring matters
 
-1. You create **prompts** — questions like "What is Acme Corp?" or "Is Acme Corp a good employer?"
-2. Grapevine sends these prompts to AI models on a schedule
-3. Responses are stored, scored, and tracked over time
-4. You see visibility trends, cited sources, and sentiment shifts
+Traditional media monitoring misses a growing channel: **AI assistants**. When someone asks ChatGPT or Perplexity about your brand, the answer shapes perception — often without you knowing it was asked.
 
-## Supported models
+Grapevine tracks these answers over time so you can:
 
-| Plan | Models monitored |
-| --- | --- |
-| **Plus** | ChatGPT, Perplexity, Google AI Overviews |
-| **Pro** | All Plus models, plus Claude, Gemini, Grok, and DeepSeek |
-| **Enterprise** | 10\+ LLMs, custom configuration |
+- Catch **inaccurate** or **negative** model responses early
+- See which **sources** models cite when describing you
+- Measure **visibility** trends as models update their training and retrieval
 
-## Prompt limits
+## How it fits together
 
-| Plan | Prompts per month |
-| --- | --- |
-| Plus | 50 |
-| Pro | 200 |
-| Enterprise | Custom |
-
-## Creating prompts
-
-Go to **Prompts** in the sidebar:
-
-1. Click **Add prompt**
-2. Write a natural-language question a consumer might ask
-3. Assign it to a topic
-4. Choose which models to query (based on your plan)
+1. Create **prompts** — questions real users might ask
+2. Grapevine queries **AI models** on a schedule
+3. Responses are **scored and stored** with cited sources
+4. **Entities** and **sources** from AI answers merge into your workspace directory
 
 <Tip>
-  Write prompts the way real users ask — "Is \[Brand\] trustworthy?" beats "Brand reputation analysis".
+  Start with 3–5 prompts that mirror how customers, journalists, or investors actually ask about you.
 </Tip>
 
-## Reading results
+## Plan availability
 
-Each prompt shows:
-
-- **Latest response** from each model
-- **Visibility score** — how prominently your brand appears
-- **Cited sources** — URLs the model references
-- **History** — how answers evolved over weeks and months
-
-## Why it matters
-
-A bad AI answer can spread faster than a bad headline. AI monitoring lets you catch inaccurate or negative model responses before they become the default answer millions of people see.
+AI monitoring is available on **Plus** and **Pro** plans. See **[Prompts](/monitoring/prompts)** for model coverage, limits, and setup.
