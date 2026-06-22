@@ -240,6 +240,12 @@ header a.bg-primary:hover::after {
   display: none !important;
 }
 
+/* Restore the bottom breathing room the footer's pb-28 used to provide, so the
+   Previous/Next cards clear the sticky "Ask a question" input. */
+#content-area {
+  padding-bottom: 7rem;
+}
+
 /* Search entry — recessed input well. */
 #search-bar-entry {
   box-shadow: var(--gv-shadow-well) !important;
