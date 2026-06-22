@@ -39,9 +39,14 @@
           "href": "/"
         },
         {
-          "anchor": "Contact",
-          "icon": "life-buoy",
+          "anchor": "Book Demo",
+          "icon": "calendar",
           "href": "https://grapevine.tech/demo"
+        },
+        {
+          "anchor": "Support",
+          "icon": "life-buoy",
+          "href": "https://grapevine.tech/support/"
         }
       ]
     },
@@ -116,6 +121,10 @@
       {
         "href": "https://grapevine.tech/about",
         "label": "About"
+      },
+      {
+        "href": "https://grapevine.tech/support/",
+        "label": "Support"
       }
     ],
     "primary": {
@@ -126,8 +135,8 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/grapevine",
-      "linkedin": "https://www.linkedin.com/company/grapevine-tech"
+      "x": "https://x.com/grapevineintel",
+      "linkedin": "https://www.linkedin.com/company/grapevineintelligence/"
     }
   },
   "redirects": [
