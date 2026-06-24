@@ -42,6 +42,18 @@ Plus and Pro plans also include **MCP (Model Context Protocol)** access, letting
 
 Delete unused keys from the API Keys page. Revocation is immediate — any integration using that key will stop working.
 
+## Subscription status
+
+API keys only work while your workspace has an **active** Pro or Enterprise subscription. If your subscription is canceled, past due, or otherwise inactive, server-side requests — including the REST API at `/api/v1/*` and MCP — are denied even if the key itself hasn't been revoked.
+
+To keep integrations running:
+
+- Keep a valid payment method on file in the [Stripe billing portal](/account/billing#managing-billing)
+- Resolve `past_due` invoices promptly
+- If you cancel, expect API keys to stop working at the end of the current billing period
+
+Restoring the subscription re-enables the existing keys — you don't need to issue new ones.
+
 ## Rate limits
 
 Rate limits depend on your plan. Contact support if you need higher throughput for enterprise integrations.
